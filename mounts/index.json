@@ -1,11 +1,9 @@
 {
   "analysis": {
-    "type": "githubReposAnalysis",
+    "type": "githubReleasesFilesAnalysis",
     "options": {
       "user": "wyin404",
-      "repository": "dl",
-      "ref": "main",
-      "maxDeep": 5
+      "repository": "dl"
     }
   },
   "downProxy": {
