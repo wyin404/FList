@@ -1,12 +1,12 @@
 {
   "analysis": {
-    "type": "githubReleasesFilesAnalysis",
+    "type": "githubReposAnalysis",
     "options": {
       "user": "wyin404",
-      "repository": "dl"
+      "repository": "dl",
+      "authorizationToken": {
+        "$env": "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"
+      }
     }
-  },
-  "downProxy": {
-    "type": "cloudflarePagesDownProxy"
   }
 }
