@@ -39,7 +39,7 @@ const PDFPlayer = defineViewComponent("PDF预览",()=>import("./PDFPlayer.vue"),
 const PreTextPlayer = defineViewComponent("文本预览",()=>import("./PreTextPlayer.vue"),"allow");
 const fileTypesSuffixConfig:[string[],ViewComponent[]][] = [
     [[".mp4",".mkv",".webm",".m3u8",".ts",".avi",".mov",".wmv",".flv"],[VideoPlayer]],
-    [[".mp3",".flac",".wav"],[MusicPlayer]],
+    [[".mp3",".flac",".wav",".aac"],[MusicPlayer]],
     [[".md"],[MarkdownPlayer]],
     [[".jpg",".jpeg",".png",".gif",".bmp",".webp",".svg",".ico",".tiff",],[ImgPlayer]],
     [[".pdf"],[PDFPlayer]],
