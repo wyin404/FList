@@ -2,11 +2,13 @@
   "analysis": {
     "type": "githubReposAnalysis",
     "options": {
-      "user": "wyin5100",
-      "repository": "dl",
-      "ref": "master",
+      "user": "Aikoyori",
+      "repository": "ProgrammingVTuberLogos",
+      "ref": "main",
       "maxDeep": 5
     }
   },
-  "downProxy": { "type": "vercelDownProxy" }
+  "downProxy": {
+    "type": "cloudflarePagesDownProxy"
+  }
 }
