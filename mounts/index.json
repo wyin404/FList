@@ -3,7 +3,7 @@
     "type": "githubReleasesFilesAnalysis",
     "options": {
       "user": "wyin404",
-      "repository": "dl",
+      "repository": "FList",
       "authorizationToken": {"$env": "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"}
     }
   },
