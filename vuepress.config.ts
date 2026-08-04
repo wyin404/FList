@@ -7,25 +7,28 @@ export default defineUserConfig({
   pagePatterns: [],
   lang: 'zh-CN',
   public: `./public`,
-  // 网站标题，标题颜色可在 src/client/css/main.css 中修改
   title: 'dl.wyin5100.top',
-  // 网站的简介，有助于搜索引擎收录
   description: '附属于wyin5100.top',
-  // 页面 <head> 标签内添加的额外标签。 不要修改/logo.png可以替换掉这个文件，删除logo.png会导致构建出错。
-  head: [['link', { rel: 'icon', href: '/logo.png' }]],
-   [
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    // 👇 加这段：按时间切换背景图的脚本
+    [
       'script',
       {},
       `
         (function() {
           var hour = new Date().getHours();
           var bgUrl = '';
-          if (hour >= 6 && hour < 18) {
-            bgUrl = '/background2.jpg';
-          } else if (hour >= 18 && hour < 24) {
-            bgUrl = '/background.jpg';
+          if (hour >= 6 && hour < 12) {
+            bgUrl = '/bg-morning.jpg';
+          } else if (hour >= 12 && hour < 17) {
+            bgUrl = '/bg-afternoon.jpg';
+          } else if (hour >= 17 && hour < 19) {
+            bgUrl = '/bg-sunset.jpg';
+          } else if (hour >= 19 && hour < 21) {
+            bgUrl = '/bg-evening.jpg';
           } else {
-            bgUrl = '/background.jpg';
+            bgUrl = '/bg-night.jpg';
           }
           document.body.style.backgroundImage = 'url(' + bgUrl + ')';
           document.body.style.backgroundSize = 'cover';
@@ -33,9 +36,8 @@ export default defineUserConfig({
           document.body.style.backgroundAttachment = 'fixed';
         })();
       `
-    ],
-  // 页面预加载，所有其它页面所需的文件都会被预拉取。这对于小型站点来说是十分有帮助的，因为它会大大提升页面切换的速度。但是在你的网站有很多页面时不建议你这么做。
-  // 简单来说就是，如果你的文件不多就可以打开这个选项，可以大大提高页面切换的速度，如果文件非常多就不建议打开。建议超过100个文件就不要打开这个选项。
+    ]
+  ],
   shouldPrefetch: true,
   theme: FileList()
 })
