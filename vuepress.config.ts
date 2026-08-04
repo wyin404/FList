@@ -36,7 +36,23 @@ export default defineUserConfig({
           document.body.style.backgroundAttachment = 'fixed';
         })();
       `
-    ]
+    ],
+      // 👇 加这个让内容区域透明
+  [
+    'style',
+    {},
+    `
+      .page {
+        background-color: rgba(255, 255, 255, 0.85) !important;
+        backdrop-filter: blur(10px);
+        min-height: 100vh;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+    `
+  ]
   ],
   shouldPrefetch: true,
   theme: FileList()
