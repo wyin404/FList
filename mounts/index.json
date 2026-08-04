@@ -1,9 +1,9 @@
 {
   "analysis": {
-    "type": "githubReleasesFilesAnalysis",
+    "type": "githubReposAnalysis",
     "options": {
-      "user": "jianjianai",
-      "repository": "FList",
+      "user": "wyin404",
+      "repository": "dl",
       "authorizationToken": {"$env": "GITHUB_TOKEN"}
     }
   },
