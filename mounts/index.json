@@ -4,8 +4,9 @@
     "options": {
       "user": "wyin5100",
       "repository": "dl",
-      "authorizationToken": {"$env": "GITHUB_TOKEN"}
+      "ref": "master",
+      "maxDeep": 5
     }
   },
-  "downProxy": { "type": "cloudflarePagesDownProxy" }
+  "downProxy": { "type": "vercelDownProxy" }
 }
