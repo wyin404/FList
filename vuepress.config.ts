@@ -19,7 +19,7 @@ export default defineUserConfig({
       html[data-theme="light"] body,
       html[data-theme="dark"] body,
       body {
-        background-image: url('/bg-morning.jpg') !important;
+        background-image: url('/background2.jpg') !important;
         background-size: cover !important;
         background-position: center !important;
         background-attachment: fixed !important;
