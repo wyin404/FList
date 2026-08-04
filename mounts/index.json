@@ -4,9 +4,8 @@
     "options": {
       "user": "wyin404",
       "repository": "dl",
-      "authorizationToken": {
-        "$env": "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"
-      }
+      "authorizationToken": {"$env": "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"}
     }
-  }
+  },
+  "downProxy": { "type": "vercelDownProxy" }
 }
