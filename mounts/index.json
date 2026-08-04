@@ -2,8 +2,8 @@
   "analysis": {
     "type": "githubReposAnalysis",
     "options": {
-      "user": "Aikoyori",
-      "repository": "ProgrammingVTuberLogos",
+      "user": "wyin404",
+      "repository": "dl",
       "authorizationToken": {"$env": "GITHUB_TOKEN"}
     }
   },
