@@ -20,15 +20,15 @@ export default defineUserConfig({
           var hour = new Date().getHours();
           var bgUrl = '';
           if (hour >= 6 && hour < 12) {
-            bgUrl = '/bg-morning.jpg';
+            bgUrl = '/background2.jpg';
           } else if (hour >= 12 && hour < 17) {
-            bgUrl = '/bg-afternoon.jpg';
+            bgUrl = '/background2.jpg';
           } else if (hour >= 17 && hour < 19) {
-            bgUrl = '/bg-sunset.jpg';
+            bgUrl = '/background2.jpg';
           } else if (hour >= 19 && hour < 21) {
-            bgUrl = '/bg-evening.jpg';
+            bgUrl = '/background.jpg';
           } else {
-            bgUrl = '/bg-night.jpg';
+            bgUrl = '/background.jpg';
           }
           document.body.style.backgroundImage = 'url(' + bgUrl + ')';
           document.body.style.backgroundSize = 'cover';
