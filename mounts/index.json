@@ -2,8 +2,8 @@
   "analysis": {
     "type": "githubReposAnalysis",
     "options": {
-      "user": "Aikoyori",
-      "repository": "ProgrammingVTuberLogos",
+      "user": "wyin404",
+      "repository": "dl",
       "ref": "main",
       "maxDeep": 5
     }
