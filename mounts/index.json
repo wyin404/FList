@@ -2,7 +2,7 @@
   "analysis": {
     "type": "githubReposAnalysis",
     "options": {
-      "user": "wyin404",
+      "user": "wyin5100",
       "repository": "dl",
       "authorizationToken": {"$env": "GITHUB_TOKEN"}
     }
