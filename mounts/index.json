@@ -7,5 +7,5 @@
       "authorizationToken": {"$env": "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"}
     }
   },
-  "downProxy": { "type": "vercelDownProxy" }
+  "downProxy": { "type": "cloudflarePagesDownProxy" }
 }
